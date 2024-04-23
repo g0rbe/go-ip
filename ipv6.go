@@ -44,9 +44,6 @@ func IsReserved6(ip net.IP) bool {
 }
 
 // IsValid6 checks whether ip is valid IPv6 address.
-// This function is a wrapper for github.com/elmasy-com/elnet/validator.IPv6
-//
-// Deprecated: Use github.com/elmasy-com/elnet/validator instead.
 func IsValid6[T IPTypes](ip T) bool {
 
 	switch t := any(ip).(type) {
